@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		281BF808241F9EA700B33110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF807241F9EA700B33110 /* AppDelegate.swift */; };
+		281BF80A241F9EA700B33110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF809241F9EA700B33110 /* SceneDelegate.swift */; };
+		281BF80C241F9EA700B33110 /* PPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF80B241F9EA700B33110 /* PPViewController.swift */; };
+		281BF80F241F9EA700B33110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BF80D241F9EA700B33110 /* Main.storyboard */; };
+		281BF811241F9EA900B33110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281BF810241F9EA900B33110 /* Assets.xcassets */; };
+		281BF814241F9EA900B33110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 281BF812241F9EA900B33110 /* LaunchScreen.storyboard */; };
+		281BF81D241FB89400B33110 /* PPInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF81C241FB89400B33110 /* PPInfoTableViewCell.swift */; };
+		281BF820241FDF7100B33110 /* PPExchangeRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF81F241FDF7100B33110 /* PPExchangeRatesService.swift */; };
+		281BF8292420128E00B33110 /* PPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF8282420128D00B33110 /* PPViewModel.swift */; };
+		281BF82B242013D100B33110 /* PPUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF82A242013D100B33110 /* PPUserInfoModel.swift */; };
+		281BF83D2420281F00B33110 /* PPCountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF83C2420281F00B33110 /* PPCountryModel.swift */; };
+		281BF83F2420323C00B33110 /* PPCountry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 281BF83E2420323C00B33110 /* PPCountry.bundle */; };
+		281BF8462420CD3D00B33110 /* PPCountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF8452420CD3D00B33110 /* PPCountriesViewController.swift */; };
+		281BF8482420D20C00B33110 /* PPCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF8472420D20C00B33110 /* PPCountryTableViewCell.swift */; };
+		281BF8502422178300B33110 /* PPRowInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281BF84F2422178300B33110 /* PPRowInfoModel.swift */; };
+		28E3464A242246F30083913B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E34649242246F30083913B /* Reachability.swift */; };
+		28E3464C24226B880083913B /* PPExchangeRatesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3464B24226B880083913B /* PPExchangeRatesModel.swift */; };
+		28E3464E24228FAE0083913B /* PPCurrenciesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3464D24228FAE0083913B /* PPCurrenciesService.swift */; };
+		28E3465024229DFD0083913B /* PPBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3464F24229DFD0083913B /* PPBaseService.swift */; };
+		28E346522422BAC50083913B /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E346512422BAC50083913B /* CommonExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		281BF804241F9EA700B33110 /* PenguinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenguinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		281BF807241F9EA700B33110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		281BF809241F9EA700B33110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		281BF80B241F9EA700B33110 /* PPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPViewController.swift; sourceTree = "<group>"; };
+		281BF80E241F9EA700B33110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		281BF810241F9EA900B33110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		281BF813241F9EA900B33110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		281BF815241F9EA900B33110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		281BF81C241FB89400B33110 /* PPInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPInfoTableViewCell.swift; sourceTree = "<group>"; };
+		281BF81F241FDF7100B33110 /* PPExchangeRatesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPExchangeRatesService.swift; sourceTree = "<group>"; };
+		281BF8282420128D00B33110 /* PPViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPViewModel.swift; sourceTree = "<group>"; };
+		281BF82A242013D100B33110 /* PPUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPUserInfoModel.swift; sourceTree = "<group>"; };
+		281BF83C2420281F00B33110 /* PPCountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCountryModel.swift; sourceTree = "<group>"; };
+		281BF83E2420323C00B33110 /* PPCountry.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PPCountry.bundle; sourceTree = "<group>"; };
+		281BF8452420CD3D00B33110 /* PPCountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCountriesViewController.swift; sourceTree = "<group>"; };
+		281BF8472420D20C00B33110 /* PPCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCountryTableViewCell.swift; sourceTree = "<group>"; };
+		281BF84F2422178300B33110 /* PPRowInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPRowInfoModel.swift; sourceTree = "<group>"; };
+		28E34649242246F30083913B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		28E3464B24226B880083913B /* PPExchangeRatesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPExchangeRatesModel.swift; sourceTree = "<group>"; };
+		28E3464D24228FAE0083913B /* PPCurrenciesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPCurrenciesService.swift; sourceTree = "<group>"; };
+		28E3464F24229DFD0083913B /* PPBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPBaseService.swift; sourceTree = "<group>"; };
+		28E346512422BAC50083913B /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281BF801241F9EA700B33110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		281BF7FB241F9EA700B33110 = {
+			isa = PBXGroup;
+			children = (
+				281BF806241F9EA700B33110 /* PenguinPay */,
+				281BF805241F9EA700B33110 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		281BF805241F9EA700B33110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				281BF804241F9EA700B33110 /* PenguinPay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		281BF806241F9EA700B33110 /* PenguinPay */ = {
+			isa = PBXGroup;
+			children = (
+				28E34648242246E40083913B /* Helpers */,
+				281BF81E241FDF5A00B33110 /* Service */,
+				281BF821241FE34700B33110 /* Model */,
+				281BF824241FE48E00B33110 /* ViewModel */,
+				281BF825241FE49700B33110 /* View */,
+				281BF807241F9EA700B33110 /* AppDelegate.swift */,
+				281BF809241F9EA700B33110 /* SceneDelegate.swift */,
+				281BF83B2420278D00B33110 /* Resources */,
+				281BF815241F9EA900B33110 /* Info.plist */,
+			);
+			path = PenguinPay;
+			sourceTree = "<group>";
+		};
+		281BF81E241FDF5A00B33110 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				28E3464F24229DFD0083913B /* PPBaseService.swift */,
+				281BF81F241FDF7100B33110 /* PPExchangeRatesService.swift */,
+				28E3464D24228FAE0083913B /* PPCurrenciesService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		281BF821241FE34700B33110 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28E3464B24226B880083913B /* PPExchangeRatesModel.swift */,
+				281BF83C2420281F00B33110 /* PPCountryModel.swift */,
+				281BF82A242013D100B33110 /* PPUserInfoModel.swift */,
+				281BF84F2422178300B33110 /* PPRowInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		281BF824241FE48E00B33110 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				281BF8282420128D00B33110 /* PPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		281BF825241FE49700B33110 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				281BF8442420CCCF00B33110 /* TableViewCells */,
+				281BF80B241F9EA700B33110 /* PPViewController.swift */,
+				281BF8452420CD3D00B33110 /* PPCountriesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		281BF83B2420278D00B33110 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				281BF812241F9EA900B33110 /* LaunchScreen.storyboard */,
+				281BF80D241F9EA700B33110 /* Main.storyboard */,
+				281BF810241F9EA900B33110 /* Assets.xcassets */,
+				281BF83E2420323C00B33110 /* PPCountry.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		281BF8442420CCCF00B33110 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				281BF81C241FB89400B33110 /* PPInfoTableViewCell.swift */,
+				281BF8472420D20C00B33110 /* PPCountryTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		28E34648242246E40083913B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				28E34649242246F30083913B /* Reachability.swift */,
+				28E346512422BAC50083913B /* CommonExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		281BF803241F9EA700B33110 /* PenguinPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 281BF818241F9EA900B33110 /* Build configuration list for PBXNativeTarget "PenguinPay" */;
+			buildPhases = (
+				281BF800241F9EA700B33110 /* Sources */,
+				281BF801241F9EA700B33110 /* Frameworks */,
+				281BF802241F9EA700B33110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenguinPay;
+			productName = PenguinPay;
+			productReference = 281BF804241F9EA700B33110 /* PenguinPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		281BF7FC241F9EA700B33110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Criss;
+				TargetAttributes = {
+					281BF803241F9EA700B33110 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 281BF7FF241F9EA700B33110 /* Build configuration list for PBXProject "PenguinPay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 281BF7FB241F9EA700B33110;
+			productRefGroup = 281BF805241F9EA700B33110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				281BF803241F9EA700B33110 /* PenguinPay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		281BF802241F9EA700B33110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				281BF814241F9EA900B33110 /* LaunchScreen.storyboard in Resources */,
+				281BF83F2420323C00B33110 /* PPCountry.bundle in Resources */,
+				281BF811241F9EA900B33110 /* Assets.xcassets in Resources */,
+				281BF80F241F9EA700B33110 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281BF800241F9EA700B33110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28E3465024229DFD0083913B /* PPBaseService.swift in Sources */,
+				281BF80C241F9EA700B33110 /* PPViewController.swift in Sources */,
+				281BF8462420CD3D00B33110 /* PPCountriesViewController.swift in Sources */,
+				28E3464A242246F30083913B /* Reachability.swift in Sources */,
+				281BF81D241FB89400B33110 /* PPInfoTableViewCell.swift in Sources */,
+				281BF8482420D20C00B33110 /* PPCountryTableViewCell.swift in Sources */,
+				281BF808241F9EA700B33110 /* AppDelegate.swift in Sources */,
+				281BF82B242013D100B33110 /* PPUserInfoModel.swift in Sources */,
+				281BF820241FDF7100B33110 /* PPExchangeRatesService.swift in Sources */,
+				28E3464C24226B880083913B /* PPExchangeRatesModel.swift in Sources */,
+				28E346522422BAC50083913B /* CommonExtensions.swift in Sources */,
+				281BF80A241F9EA700B33110 /* SceneDelegate.swift in Sources */,
+				28E3464E24228FAE0083913B /* PPCurrenciesService.swift in Sources */,
+				281BF83D2420281F00B33110 /* PPCountryModel.swift in Sources */,
+				281BF8292420128E00B33110 /* PPViewModel.swift in Sources */,
+				281BF8502422178300B33110 /* PPRowInfoModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		281BF80D241F9EA700B33110 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281BF80E241F9EA700B33110 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		281BF812241F9EA900B33110 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				281BF813241F9EA900B33110 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		281BF816241F9EA900B33110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		281BF817241F9EA900B33110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		281BF819241F9EA900B33110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W599V8A3HB;
+				INFOPLIST_FILE = PenguinPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = criss.com.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		281BF81A241F9EA900B33110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W599V8A3HB;
+				INFOPLIST_FILE = PenguinPay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = criss.com.PenguinPay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		281BF7FF241F9EA700B33110 /* Build configuration list for PBXProject "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281BF816241F9EA900B33110 /* Debug */,
+				281BF817241F9EA900B33110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		281BF818241F9EA900B33110 /* Build configuration list for PBXNativeTarget "PenguinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				281BF819241F9EA900B33110 /* Debug */,
+				281BF81A241F9EA900B33110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 281BF7FC241F9EA700B33110 /* Project object */;
+}

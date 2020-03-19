@@ -1,0 +1,26 @@
+[
+{
+"name": "Kenya",
+"code": "KES",
+"dialCode": "+254",
+"numberOfDigit" : 9
+},
+{
+"name": "Nigeria",
+"code": "NGN",
+"dialCode": "+234",
+"numberOfDigit" : 7
+},
+{
+"name": "Tanzania",
+"code": "TZS",
+"dialCode": "+255",
+"numberOfDigit" : 9
+},
+{
+"name": "Uganda",
+"code": "UGX",
+"dialCode": "+256",
+"numberOfDigit" : 7
+}
+]
